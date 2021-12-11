@@ -1,0 +1,29 @@
+{
+    "name": "node-frame-type",
+    "version": "1.0.0",
+    "description": "boilerplate of typescript node",
+    "keywords": ["node", "template", "typescript", "boilerplate"],
+    "author": "zany",
+    "license": "ISC",
+    "main": "src/srever.ts",
+    "scripts": {
+        "prebuild": "prettier -w ./src",
+        "build": "rimraf ./build && tsc",
+        "dev": "nodemon",
+        "start": "npm run build && node build/server.js",
+        "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit --maxWorker=1",
+        "tw": "cross-env NODE_ENV=test jest --watchAll --runInBand --detectOpenHandles --forceExit --maxWorker=1"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.0.3",
+        "@types/node": "^16.11.12",
+        "cross-env": "^7.0.3",
+        "jest": "^27.4.4",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.5.1",
+        "rimraf": "^3.0.2",
+        "ts-jest": "^27.1.1",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.3"
+    }
+}
