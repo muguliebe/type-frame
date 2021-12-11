@@ -2,7 +2,12 @@
     "name": "node-frame-type",
     "version": "1.0.0",
     "description": "boilerplate of typescript node",
-    "keywords": ["node", "template", "typescript", "boilerplate"],
+    "keywords": [
+        "node",
+        "template",
+        "typescript",
+        "boilerplate"
+    ],
     "author": "zany",
     "license": "ISC",
     "main": "src/srever.ts",
